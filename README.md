@@ -1,7 +1,7 @@
 # xaddon
-A collection of xarray-based tools often used in atmospheric, ocean and climate science
+A collection of xarray-based tools often used in atmospheric, ocean and climate science.
 
-## example ([notebook](example/xaddon_example.ipynb) 
+## example 
 
         import xarray as xr
         import numpy as np
@@ -18,3 +18,5 @@ A collection of xarray-based tools often used in atmospheric, ocean and climate 
 
 ![power_spectrum_peaks](example/power_spectrum_peaks.png)
 
+## notebook examples
+* [power_spectrum_peaks](example/xaddon_example.ipynb)
