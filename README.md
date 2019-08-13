@@ -1,5 +1,5 @@
 # xaddon
-A collection of xarray-based tools often used in atmospheric, ocean and climate science.
+A collection of lightly xarray-wrapped functions that are often used in atmospheric, ocean and climate science.
 
 ## example 
 
