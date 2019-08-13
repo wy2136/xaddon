@@ -16,12 +16,14 @@ def linregress(da_y, da_x, dim=None):
         output_core_dims=[[], [], [], [], []],
         vectorize=True,
         dask='allowed')
+    predicted = da_x * slope + intercept
 
     slope.attrs['long_name'] = 'slope of the linear regression'
     intercept.attrs['long_name'] = 'intercept of the linear regression'
     r.attrs['long_name'] = 'correlation coefficient'
     p.attrs['long_name'] = 'p-value'
     stderr.attrs['long_name'] = 'standard error of the estimated gradient'
+    predicted.attrs['long_name'] = 'predicted values by the linear regression model'
 
     return xr.Dataset(dict(slope=slope, intercept=intercept, 
-        r=r, p=p, stderr=stderr))
+        r=r, p=p, stderr=stderr, predicted=predicted))

@@ -19,4 +19,5 @@ A collection of lightly xarray-wrapped functions that are often used in atmosphe
 ![power_spectrum_peaks](example/power_spectrum_peaks.png)
 
 ## notebook examples
+* [linear regression](https://nbviewer.jupyter.org/github/wy2136/xaddon/blob/master/example/xaddon_example_linear_regression.ipynb)
 * [power spectrum and peaks](https://nbviewer.jupyter.org/github/wy2136/xaddon/blob/master/example/xaddon_example.ipynb)
