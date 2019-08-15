@@ -8,7 +8,8 @@ from scipy.signal import detrend as _detrend
 def detrend(da, dim=None, **kwargs):
     '''xarray-wrapped version of scipy.signal.detrend.'''
     if dim is None:
-        axis = -1
+        assert da.ndim == 1, 'only 1-D array is allowed when dim is None; specify dim explicitly for higher-dimension array'
+        axis = 0
     else:
         axis = da.dims.index(dim)
     kwargs['axis'] = axis
