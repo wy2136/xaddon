@@ -6,7 +6,7 @@ from scipy.signal import find_peaks as _find_peaks
 
 def find_peaks(da, **kwargs):
     '''xarray-version scipy.signal.find_peaks'''
-    assert len(da.dims) == 1, 'input DataArray must be 1-D'
+    assert da.ndim == 1, 'input DataArray must be 1-D'
 
     dim = da.dims[0]
     if len(da.coords)==0: # no coords
